@@ -1,0 +1,18 @@
+--- lua-sensors-0.1.0-orig/Makefile	2009-09-13 17:27:08.856913569 +0200
++++ lua-sensors-0.1.0/Makefile	2009-09-13 17:35:12.584365255 +0200
+@@ -4,13 +4,13 @@
+ 
+ DESTDIR =
+ T = libsensors
+-LUAPKG = lua5.1
++LUAPKG = lua51
+ LUACFLAGS = `pkg-config $(LUAPKG) --cflags`
+ LUALIBS = `pkg-config $(LUAPKG) --libs`
+ LIBSENSORSCFLAGS = -I/usr/include/sensors
+ LIBSENSORSLIBS = -L/usr/lib -lsensors
+ CFLAGS =  $(LUACFLAGS) $(LIBSENSORSCFLAGS) -pedantic -Wall -fPIC
+-INSTALL_PATH = `pkg-config $(LUAPKG) --define-variable=prefix=/usr/local --variable=INSTALL_CMOD`
++INSTALL_PATH = /usr/share/lua/5.1
+ LIBS = $(LUALIBS) $(LIBSENSORSLIBS)
+ 
+ 
