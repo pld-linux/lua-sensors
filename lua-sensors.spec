@@ -1,13 +1,13 @@
 Summary:	Querying sensor data /temperatures, voltages, fan speeds, .../ via libsensors
 Summary(hu.UTF-8):	Szenzor adatok (hőmérséklet, feszültség, ventilátor-sebesség, ...) lekérdezése libsensor-on keresztül
 Name:		lua-sensors
-Version:	0.1.0
+Version:	0.1.8
 Release:	1
 License:	BSD-like
 Group:		Development/Languages
 Patch0:		%{name}-makefile.patch
-Source0:	http://luaforge.net/frs/download.php/4243/%{name}-%{version}.tar.gz
-# Source0-md5:	f5bc6d17938df925cbdb8388fb53be6d
+Source0:	http://luaforge.net/frs/download.php/4277/%{name}-%{version}.tar.gz
+# Source0-md5:	ae9f5011a88c1f16c3b2085ec340604f
 URL:		http://luaforge.net/projects/lua-sensors/
 BuildRequires:	lua51-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
