@@ -9,6 +9,8 @@ Patch0:		%{name}-makefile.patch
 Source0:	http://luaforge.net/frs/download.php/4277/%{name}-%{version}.tar.gz
 # Source0-md5:	ae9f5011a88c1f16c3b2085ec340604f
 URL:		http://luaforge.net/projects/lua-sensors/
+BuildRequires:	pkgconfig
+BuildRequires:	lm_sensors-devel
 BuildRequires:	lua51-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
